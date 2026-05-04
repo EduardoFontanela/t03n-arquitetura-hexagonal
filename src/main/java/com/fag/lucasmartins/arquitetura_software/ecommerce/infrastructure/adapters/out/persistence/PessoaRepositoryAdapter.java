@@ -5,12 +5,12 @@ import com.fag.lucasmartins.arquitetura_software.ecommerce.domain.model.PessoaBO
 import com.fag.lucasmartins.arquitetura_software.ecommerce.infrastructure.adapters.out.persistence.entities.PessoaEntity;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("pessoaRepositoryEcommerce")
 public class PessoaRepositoryAdapter implements PessoaServicePort {
 
-    private final PessoaJpaRepository pessoaJpaRepository;
+    private final EcommercePessoaJpaRepository pessoaJpaRepository;
 
-    public PessoaRepositoryAdapter(PessoaJpaRepository pessoaJpaRepository) {
+    public PessoaRepositoryAdapter(EcommercePessoaJpaRepository pessoaJpaRepository) {
         this.pessoaJpaRepository = pessoaJpaRepository;
     }
 

@@ -6,7 +6,7 @@ import javax.persistence.Table;
 import java.time.LocalDate;
 import java.util.UUID;
 
-@Entity
+@Entity(name = "PessoaEntityEcommerce")
 @Table(name = "pessoas")
 public class PessoaEntity {
 

@@ -4,7 +4,7 @@ import com.fag.lucasmartins.arquitetura_software.ecommerce.application.ports.out
 import com.fag.lucasmartins.arquitetura_software.ecommerce.domain.model.PessoaBO;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("pessoaServiceEcommerce")
 public class PessoaService {
 
     private final PessoaServicePort pessoaServicePort;
